@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0d1117;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            background: #d9d8da;
+            padding: 10px 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        .header img {
+            height: 75px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            font-size: 35px;
+            margin: 0;
+            font-style: color #000000;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+            margin-top: 60px;
+        }
+        .left-section {
+            flex: 1;
+            background: url('image/Untitled-2.png') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right-section {
+            flex: 1;
+            background: #025E31;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-box {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            padding: 25px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #30363d;
+            background: #0d1117;
+            color: white;
+        }
+        button {
+            padding: 10px;
+            background: #238636;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #2ea043;
+        }
+        a {
+            color: #58a6ff;
+        }
+        form{
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="image/logo2.png" alt="Logo">
+            <h1 style="color: #000000;">Projek/P5</h1>
+        </div>
+        <div class="content">
+            <div class="left-section"></div>
+            <div class="right-section">
+                <div class="login-box">
+                    <h2>Projek/P5</h2>
+                    <form>
+                        <label>NISN</label>
+                        <input type="text" placeholder="NISN" required>
+
+                        <label>Password</label>
+                        <input type="password" placeholder="Password" required>
+                        <small>Password adalah 5 angka terakhir dari NISN anda.</small>
+
+                        <button type="submit">Lanjut →</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
